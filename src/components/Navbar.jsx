@@ -64,7 +64,7 @@ const Navbar = () => {
           color={currentColor}
           icon={<RiNotification3Line/>}  
         />
-        <TooltipComponent content='Profile' position='BottomCenter'>
+        {/* <TooltipComponent content='Profile' position='BottomCenter'>
           <div className='flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg'
             onClick={()=>handleClick('userProfile')}
           >   
@@ -75,11 +75,11 @@ const Navbar = () => {
             </p>
             <MdKeyboardArrowDown className='text-gray-400 text-14'/>
           </div>
-        </TooltipComponent>
+        </TooltipComponent> */}
         {isClicked.cart && <Cart/>}
         {isClicked.chat && <Chat/>}
         {isClicked.notification && <Notification/>}
-        {isClicked.userProfile && <UserProfile/>}
+        {/* {isClicked.userProfile && <UserProfile/>} */}
       </div>
     </div>
   )
